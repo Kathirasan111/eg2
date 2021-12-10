@@ -11,21 +11,21 @@ logger = logging.getLogger(__name__)
 ADMINS = int(os.environ.get("ADMINS", 1745047302))
 
 PHOTO = [
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
-    " https://telegra.ph/file/73b483a914734e1ffcdd6.jpg"
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg",
+    "https://telegra.ph/file/73b483a914734e1ffcdd6.jpg"
 ]
 
 @Client.on_message(filters.command("start"))
@@ -52,7 +52,7 @@ async def start(bot, cmd):
                    reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("⭕️Join Channel⭕️", url=invite_link.invite_link)
+                                InlineKeyboardButton("🔊Join Channel🔊", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄Restart🔃", callback_data=f"checksub#{file_id}")
